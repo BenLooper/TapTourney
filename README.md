@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Tap Tourney
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Destroy your friends and become their Ruler.
+Basically we're seeing how far we can take the simple concept of a tapping game. 
 
-## Available Scripts
+The actual game (tapping or clicking the button) will be the core functionality of the app (besides core social features like live chat and leaderboard), but the fun will come from embellishing it to a ridiculous degree. 
 
-In the project directory, you can run:
+The game is divided into seasons, and the first iteration (MVP) is the pilot.
 
-### `yarn start`
+It will start very simple - 
+- Users will have 2/3 days to get the most taps within 15 seconds.
+- Whoever has the highest score by the end of the 2/3 days wins.
+- The winner is crowned Tap Tyrant and is granted 1 of 3 boons.
+- The boons will be somewhat crpytic, but will correspond to an idea or technology we implement
+    - eg: mixing up the game format, making a cast system, video chat, store, multiplayer, whatever
+- The next season starts with the added functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Think of it as a playground for technology and ideas that we can subject people to. Also, it could   be a way to work on stuff we normally aren't interested in on it's own. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Inspired by Blaseball.
 
-### `yarn test`
+## MVP
+Login - User makes an account and can sign in, remembers users so they don't have to do this every time
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Simple button game - records number of clicks / taps whatever within a certain time frame.
+Leaderboard - Shows the top 3 players with the most 
 
-### `yarn build`
+Live Chat - Chat that updates in real time
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies
+- React
+- Amplify for managing resources
+- AWS Cognito for sign in / up 
+- AWS AppSync for score keeping
+- Tailwind CSS
+- Gitflow 
+- Jest for testing

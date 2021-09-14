@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react'
 
 function App() {
+  let [presses, setPresses] = useState(0)
+  let [gameOn, setGameOn] = useState(false)
+
+  useEffect(() => {
+    console.log(presses);
+  }, [gameOn])
+
+  const handleClick = () => {
+    setPresses(presses+=1)
+  }
+
+  const startGame = () =>{
+    setGameOn(true);
+    setTimeout(() => {
+      setGameOn(false)
+    }, 10000)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={startGame}>Start Game</button>
+      <button disabled={gameOn ? false:true} onClick={handleClick}>Press</button>
     </div>
   );
 }

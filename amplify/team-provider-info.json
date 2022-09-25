@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-taptourney-dev-70802-authRole",
+      "UnauthRoleArn": "arn:aws:iam::143345059951:role/amplify-taptourney-dev-70802-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::143345059951:role/amplify-taptourney-dev-70802-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-taptourney-dev-70802-deployment",
+      "UnauthRoleName": "amplify-taptourney-dev-70802-unauthRole",
+      "StackName": "amplify-taptourney-dev-70802",
+      "StackId": "arn:aws:cloudformation:us-west-2:143345059951:stack/amplify-taptourney-dev-70802/7f9308f0-3813-11ed-bb38-069992313953",
+      "AmplifyAppId": "d1k9aw9cyhgc9j"
+    },
+    "categories": {
+      "auth": {
+        "taptourney": {}
+      }
+    }
+  }
+}
